@@ -36,5 +36,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "moduleResolution": "node10",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
   }
 }
