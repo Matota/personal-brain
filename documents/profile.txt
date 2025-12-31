@@ -1,0 +1,11 @@
+My Personal Knowledge Assistant Plan
+
+The Second Brain project is designed to be a local-first AI assistant.
+It uses LangGraph for orchestration and Ollama for the LLM.
+The goal is total privacy.
+
+---
+
+Work Schedule
+I plan to spend mornings on ingestion and afternoons on agent tuning.
+I prefer using Llama 3 for reasoning tasks.
