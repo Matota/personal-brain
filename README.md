@@ -7,6 +7,8 @@ A local-first, private AI assistant built with **Ollama**, **LangGraph**, and **
 - **Private RAG**: Decoupled document server using keyword search (ChromaDB support coming soon).
 - **State-Driven**: Orchestrated by LangGraph for robust agentic behavior.
 
+[**View Technical Architecture**](./ARCHITECTURE.md)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
