@@ -9,17 +9,17 @@ The system operates as a **local-first RAG (Retrieval-Augmented Generation)** lo
 graph TD
     User["User Input (CLI)"] --> Manager["LangGraph Manager (src/index.ts)"]
     
-    subgraph Orchestration Layer
+    subgraph "Orchestration Layer"
         Manager --> RetrieveNode["Retrieve Node"]
         RetrieveNode --> GenerateNode["Generate Node"]
     end
 
-    subgraph Data Layer (Privacy Boundary)
+    subgraph "Data Layer (Privacy Boundary)"
         RetrieveNode -- "search_documents" --> DocServer["Document Server (MCP)"]
         DocServer -- "Keyword Search" --> Docs["Personal Documents (./documents)"]
     end
 
-    subgraph Intelligence Layer (On-Device)
+    subgraph "Intelligence Layer (On-Device)"
         GenerateNode -- "Synthesize with Context" --> Ollama["Ollama (Llama 3)"]
     end
 
